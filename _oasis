@@ -1,0 +1,13 @@
+OASISFormat: 0.4
+Name:        batteries-optparse
+Version:     1.0
+Synopsis:    Getopt style command line parsing from batteries
+Authors:     Bardur Arantsson
+License:     LGPL-2.0 with OCaml linking exception
+Plugins:     META (0.4)
+
+Library "batteries.optparse"
+  Path:       lib
+  BuildTools: ocamlbuild
+  Modules:    BatOptParse
+  
