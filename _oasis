@@ -5,9 +5,24 @@ Synopsis:    Getopt style command line parsing from batteries
 Authors:     Bardur Arantsson
 License:     LGPL-2.0 with OCaml linking exception
 Plugins:     META (0.4)
+BuildTools: ocamlbuild
 
 Library "batteries.optparse"
   Path:       lib
   BuildTools: ocamlbuild
   Modules:    BatOptParse
-  
+  BuildDepends: batteries
+
+Test test_optparse
+  Run$:               flag(tests)
+  Command:            $test_optparse
+  WorkingDirectory:   lib_test
+
+Executable test_optparse
+  Path:               lib_test
+  MainIs:             test_optparse.ml
+  Build$:             flag(tests)
+  Custom:             true
+  CompiledObject:     best
+  Install:            false
+  BuildDepends:       batteries.optparse,oUnit
