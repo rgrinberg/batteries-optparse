@@ -7,8 +7,9 @@ License:     LGPL-2.0 with OCaml linking exception
 Plugins:     META (0.4)
 BuildTools: ocamlbuild
 
-Library "batteries.optparse"
+Library batteries_optparse
   Path:       lib
+  FindlibName: batteries_optparse
   BuildTools: ocamlbuild
   Modules:    BatOptParse
   BuildDepends: batteries
@@ -25,4 +26,4 @@ Executable test_optparse
   Custom:             true
   CompiledObject:     best
   Install:            false
-  BuildDepends:       batteries.optparse,oUnit
+  BuildDepends:       batteries_optparse,oUnit
