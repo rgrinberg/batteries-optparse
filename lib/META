@@ -1,0 +1,14 @@
+# OASIS_START
+# DO NOT EDIT (digest: 3cd9cfd642b212aff0e9358377aa3fab)
+package "optparse" (
+ version = "1.0"
+ description = "Getopt style command line parsing from batteries"
+ requires = "batteries"
+ archive(byte) = "batteries.optparse.cma"
+ archive(byte, plugin) = "batteries.optparse.cma"
+ archive(native) = "batteries.optparse.cmxa"
+ archive(native, plugin) = "batteries.optparse.cmxs"
+ exists_if = "batteries.optparse.cma"
+)
+# OASIS_STOP
+
