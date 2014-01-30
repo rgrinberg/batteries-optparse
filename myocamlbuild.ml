@@ -1,5 +1,5 @@
 (* OASIS_START *)
-(* DO NOT EDIT (digest: 3668d6be3636035387aa514376df812c) *)
+(* DO NOT EDIT (digest: 742c4f514de16279eacf93578a5af054) *)
 module OASISGettext = struct
 (* # 22 "src/oasis/OASISGettext.ml" *)
 
@@ -555,7 +555,7 @@ end
 open Ocamlbuild_plugin;;
 let package_default =
   {
-     MyOCamlbuildBase.lib_ocaml = [("batteries.optparse", ["lib"], [])];
+     MyOCamlbuildBase.lib_ocaml = [("batteries_optparse", ["lib"], [])];
      lib_c = [];
      flags = [];
      includes = [("lib_test", ["lib"])]
